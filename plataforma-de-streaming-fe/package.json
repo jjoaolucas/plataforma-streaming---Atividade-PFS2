@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.21.0",
+    "jest": "^29.7.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.2",
+    "supertest": "^7.0.0",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "scripts": {
+    "start": "node swagger.js",
+    "dev": "node --es-module-specifier-resolution=node server.js",
+    "test1": "node --experimental-vm-modules node_modules/jest/bin/jest.js -i api1.test.js --forceExit",
+    "test2": "node --experimental-vm-modules node_modules/jest/bin/jest.js -i api2.test.js --forceExit",
+    "test3": "node --experimental-vm-modules node_modules/jest/bin/jest.js -i api3.test.js --forceExit"
+  },
+  "name": "pfs2",
+  "version": "1.0.0",
+  "description": "Backend da disciplina PFS2",
+  "main": "server.js",
+  "author": "eu",
+  "license": "ISC",
+  "type": "module"
+}
